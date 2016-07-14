@@ -1,0 +1,78 @@
+#File: 			LDTHelpers.pcl
+#Description:	Contains the additional subroutines used in the experiment
+#Programmer:	Connor Reid (Psy Technician)
+#Created@:		14/07/2016
+#LastMod@:		14/07/2016
+#ModifiedBy:	Connor Reid
+#Copyright@: 	School Of Psychology, Griffith University
+#-------------------------------------------------------------------
+
+sub print_2d_array(array <string, 2>& arr) begin		##Used to terminal print 2d arrays
+	loop int j = 1 until j > arr.count() begin
+		term.print(string(j) + ": ");
+		loop int k = 1 until k > arr[j].count() begin
+			term.print(arr[j][k] + "\t");
+			k = k + 1;
+		end;
+		term.print("\n");
+		j = j + 1;
+	end;
+end;
+
+sub
+	get_input_csv(string file_path, array <string, 2>& stim)		# Get stimulus from this multi column file.  
+begin
+	stim.resize(0);
+	
+	input_file in_stim = new input_file;
+
+	in_stim.open(file_path);
+
+	in_stim.set_delimiter( ',' ); 	# for get_line()
+
+	array <string> tmpstim[0];
+		
+	loop int count = 1 until
+		in_stim.end_of_file() || count == 100 || !in_stim.last_succeeded()
+	begin
+		in_stim.get_string().split(",",tmpstim);
+		if (tmpstim[1] != "")then
+			stim.add(tmpstim);
+			tmpstim.resize(0);
+		end;
+		count = count + 1;
+	end;
+
+	#print_2d_array(stim);
+end;
+
+####  Get response after main trial has been presented.  Returns the reation time.
+sub int getResponseTime begin
+	if (bool( response_manager.response_count() )) then		#  If a key is pressed
+		stimulus_data last = stimulus_manager.last_stimulus_data();		#  Last button Pressed
+		return last.reaction_time();
+	end;
+	return 0;
+end;
+
+## Save Output Data
+sub
+saveTrialData(output_file out,int trialNo,string trialType,string word,int resp,int rt,bool correct)
+begin
+	int corr = 0;
+	if(correct)then
+		corr = 1;
+	end;
+	out.print(trialNo);
+	out.print(",");
+	out.print(trialType);
+	out.print(",");
+	out.print(word);
+	out.print(",");
+	out.print(resp);
+	out.print(",");
+	out.print(rt);
+	out.print(",");
+	out.print(corr);
+	out.print("\n");
+end;
