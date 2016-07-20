@@ -21,11 +21,11 @@ out.print("Trial No,Trial Type,Word,Response,RT,Correct\n");	#print the trial in
 array <string> practiceWords[0][0];
 array <string> mainWords[0][0];
 
-practiceWords.shuffle();
-mainWords.shuffle();
-
 get_input_csv("practice.csv", practiceWords);
 get_input_csv("main.csv", mainWords);
+
+practiceWords.shuffle();
+mainWords.shuffle();
 
 instructions_trial.present();
 
