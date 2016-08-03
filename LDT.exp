@@ -386,10 +386,10 @@
 </s>
 </sse>
 <svl>
-<attenuation></attenuation>
+<attenuation>1</attenuation>
 <do_attenuation>0</do_attenuation>
 <do_volume>0</do_volume>
-<volume></volume>
+<volume>1</volume>
 </svl>
 <swp>1</swp>
 <text_encoding>utf8</text_encoding>

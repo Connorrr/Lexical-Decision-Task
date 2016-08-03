@@ -25,7 +25,9 @@ begin;
 ############### Text #########################################
 
 text{
-	caption = "In the following task you will be presented with a string of letters. Your task is to quickly and accurately identify whether the string of letters is a word or non-word.\n
+	caption = "In the following task you will be presented with a string of letters. Your task is to quickly and accurately identify whether the string of letters is a word or non-word.  
+
+eg.  Word \"THE\" or Non-word \"TEH\"\n
 
 Please respond by pressing the spacebar key if the string of letters is a word.\n
 
