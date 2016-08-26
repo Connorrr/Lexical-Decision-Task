@@ -1,19 +1,7 @@
 Scenario - LDT
-Logfile written - 07/14/2016 14:06:38
+Logfile written - 08/26/2016 14:40:32
 
 Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
 
-Connor	1	Response	1	8310	7977	1
-Connor	8	Response	1	43508	5139	1
-Connor	16	Response	1	87826	4081	1
-Connor	24	Response	1	138703	9582	1
-Connor	28	Response	1	157822	6012	1
-Connor	40	Response	1	225978	6104	2
-Connor	52	Response	1	292055	4117	1
-Connor	60	Response	1	343332	10017	2
-Connor	64	Response	1	361732	5729	1
-Connor	80	Response	1	453807	7052	1
-Connor	82	Response	1	490445	28342	1
-Connor	85	Response	1	506285	8481	1
-Connor	89	Response	1	526922	6430	2
-Connor	93	Response	1	550202	7022	1
+	1	Response	1	31591	31258	1
+	12	Quit		92950	8619

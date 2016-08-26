@@ -1,0 +1,30 @@
+student number: 1,Age: 18,Gender: 1
+Trial No,Trial Type,Word,Response,RT,Correct
+1,Practice,checkers,1,430,1
+2,Practice,madesbief,0,0,1
+3,Practice,matchbook,1,544,1
+4,Practice,speshers,1,78,0
+5,Practice,inkat,0,0,1
+6,Practice,logistics,1,152,1
+7,Practice,tritten,0,0,1
+8,Practice,ten,1,171,1
+9,Practice,input,1,608,1
+10,Practice,numerical,1,478,1
+11,Practice,indicate,1,347,1
+12,Practice,cen,1,264,0
+13,Practice,aluminium,0,0,0
+14,Practice,ensicans,0,0,1
+15,Practice,acucaniop,0,0,1
+16,Practice,fafistics,0,0,1
+17,Practice,reltorsular,0,0,1
+18,Practice,bicerimal,0,0,1
+19,Practice,flatten,1,126,1
+20,Practice,rectangular,0,0,0
+1,Main,flave,0,0,1
+2,Main,trares,1,193,0
+3,Main,broad,1,526,1
+4,Main,decystions,0,0,1
+5,Main,retouping,1,577,0
+6,Main,taxi,1,606,1
+7,Main,murder,0,0,0
+8,Main,triangle,0,0,0
